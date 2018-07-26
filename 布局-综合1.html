@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Css布局</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            text-Align: center;
+        }
+
+        #parents {
+            overflow: hidden;
+        }
+
+        #parents {
+            width: 600px;
+            border: 1px solid;
+            margin: 100px auto 0 auto;
+        }
+
+        #top {
+            background: #cc00cc;
+        }
+
+        #left {
+            background: #00cc00;
+            float: left;
+            width: 100px;
+            height: 100px;
+            margin-bottom: -2000px;
+            padding-bottom: 2000px;
+        }
+
+        #content {
+            background: #cccccc;
+            float: left;
+            width: 400px;
+            margin-bottom: -2000px;
+            padding-bottom: 2000px;
+        }
+
+        #right {
+            background: #0000cc;
+            float: right;
+            width: 100px;
+            margin-bottom: -2000px;
+            padding-bottom: 2000px;
+        }
+
+        #foot {
+            background: #cccc00;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parents">
+        <div id="top">这是Top!</div>
+        <div id="main">
+            <div id="left">这是Left!</div>
+            <div id="content">这是Content这是Content这是Content!</div>
+            <div id="right">这是Right!</div>
+        </div>
+        <div id="foot">这是Foot!</div>
+    </div>
+</body>
+
+</html>
